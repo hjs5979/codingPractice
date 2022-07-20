@@ -1,0 +1,1 @@
+{"name":"Local: 미로탈출","url":"c:\\Users\\hjs59\\git\\codingPractice\\src\\이것이코딩테스트다\\미로탈출.py","tests":[{"id":1657947781261,"input":"5 6\n101010\n111111\n000001\n111111\n111111","output":"10"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\hjs59\\git\\codingPractice\\src\\이것이코딩테스트다\\미로탈출.py","group":"local","local":true}

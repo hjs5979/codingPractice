@@ -1,0 +1,1 @@
+{"name":"Local: 위에서아래로","url":"c:\\Users\\hjs59\\git\\codingPractice\\src\\이것이코딩테스트다\\위에서아래로.py","tests":[{"id":1657958130995,"input":"3\n15\n27\n12","output":"27 15 12"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\hjs59\\git\\codingPractice\\src\\이것이코딩테스트다\\위에서아래로.py","group":"local","local":true}
