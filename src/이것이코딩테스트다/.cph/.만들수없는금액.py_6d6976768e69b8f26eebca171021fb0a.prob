@@ -1,0 +1,1 @@
+{"name":"Local: 만들수없는금액","url":"c:\\Users\\hjs59\\git\\codingPractice\\src\\이것이코딩테스트다\\만들수없는금액.py","tests":[{"id":1659176614413,"input":"5\n3 2 1 1 9","output":"8"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\hjs59\\git\\codingPractice\\src\\이것이코딩테스트다\\만들수없는금액.py","group":"local","local":true}

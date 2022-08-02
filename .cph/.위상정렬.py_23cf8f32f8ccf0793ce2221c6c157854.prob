@@ -1,0 +1,1 @@
+{"name":"Local: 위상정렬","url":"c:\\Users\\hjs59\\git\\codingPractice\\위상정렬.py","tests":[{"id":1659106802192,"input":"7 8\n1 2\n1 5\n2 3\n2 6\n3 4\n4 7\n5 6\n6 4","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\hjs59\\git\\codingPractice\\위상정렬.py","group":"local","local":true}

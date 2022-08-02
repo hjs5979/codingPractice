@@ -1,0 +1,1 @@
+{"name":"Local: 전보","url":"c:\\Users\\hjs59\\git\\codingPractice\\src\\이것이코딩테스트다\\전보.py","tests":[{"id":1659083847106,"input":"3 2 1\n1 2 4\n1 3 2","output":"2 4"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\hjs59\\git\\codingPractice\\src\\이것이코딩테스트다\\전보.py","group":"local","local":true}

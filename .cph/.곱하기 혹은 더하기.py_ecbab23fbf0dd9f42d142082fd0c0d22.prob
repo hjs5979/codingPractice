@@ -1,0 +1,1 @@
+{"name":"Local: 곱하기 혹은 더하기","url":"c:\\Users\\hjs59\\git\\codingPractice\\곱하기 혹은 더하기.py","tests":[{"id":1659170637246,"input":"02984","output":"576"},{"id":1659170645253,"input":"567","output":"210"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\hjs59\\git\\codingPractice\\곱하기 혹은 더하기.py","group":"local","local":true}

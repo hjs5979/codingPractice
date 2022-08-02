@@ -1,0 +1,1 @@
+{"name":"Local: 커리큘럼","url":"c:\\Users\\hjs59\\git\\codingPractice\\커리큘럼.py","tests":[{"id":1659166034630,"input":"5\n10 -1\n10 1 -1\n4 1 -1\n4 3 1 -1\n3 3 -1","output":"10\n20\n14\n18\n17"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\hjs59\\git\\codingPractice\\커리큘럼.py","group":"local","local":true}
