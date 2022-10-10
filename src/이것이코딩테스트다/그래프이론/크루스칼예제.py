@@ -1,3 +1,5 @@
+# 최소신장트리 생성 및 비용 확인
+
 def find_parent(parent, x):
     if parent[x] != x:
         parent[x] = find_parent(parent, parent[x])
