@@ -49,7 +49,6 @@ while i < n or j < m:
         j += 1
     k += 1
 
-# 결과 리스트 출력
+#결과 리스트 출력
 for i in result:
     print(i, end=' ')
-

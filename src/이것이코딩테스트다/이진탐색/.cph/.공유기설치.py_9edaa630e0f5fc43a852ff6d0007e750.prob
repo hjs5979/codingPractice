@@ -1,0 +1,1 @@
+{"name":"Local: 공유기설치","url":"c:\\Users\\hjs59\\git\\codingPractice\\src\\이것이코딩테스트다\\이진탐색\\공유기설치.py","tests":[{"id":1665581826255,"input":"5 3\n1\n2\n8\n4\n9","output":"3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\hjs59\\git\\codingPractice\\src\\이것이코딩테스트다\\이진탐색\\공유기설치.py","group":"local","local":true}
