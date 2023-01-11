@@ -1,0 +1,1 @@
+{"name":"Local: 카드정렬하기","url":"c:\\Users\\hjs59\\git\\codingPractice\\src\\이것이코딩테스트다\\정렬\\카드정렬하기.py","tests":[{"id":1665489938268,"input":"3\n10\n20\n40","output":"100"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\hjs59\\git\\codingPractice\\src\\이것이코딩테스트다\\정렬\\카드정렬하기.py","group":"local","local":true}

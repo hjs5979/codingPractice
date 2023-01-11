@@ -1,6 +1,6 @@
 from itertools import permutations, combinations, product, combinations_with_replacement
 
-data = [1,2,3]
+data = [1,2,3,4]
 
 perm = list(permutations(data,3))
 

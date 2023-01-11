@@ -1,0 +1,1 @@
+{"name":"Local: 이진탐색예제","url":"c:\\Users\\hjs59\\git\\codingPractice\\src\\이것이코딩테스트다\\이진탐색\\이진탐색예제.py","tests":[{"id":1665323423327,"input":"10 7\n1 3 5 7 9 11 13 15 17 19","output":"4"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\hjs59\\git\\codingPractice\\src\\이것이코딩테스트다\\이진탐색\\이진탐색예제.py","group":"local","local":true}
