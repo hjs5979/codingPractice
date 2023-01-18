@@ -1,0 +1,1 @@
+{"name":"Local: 큰 수의 법칙","url":"c:\\Users\\hjs59\\practice\\큰 수의 법칙.py","tests":[{"id":1673418503396,"input":"5 8 3\n2 4 5 4 6","output":"46"},{"id":1673419477427,"input":"5 7 2\n3 4 3 4 3","output":"28"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\hjs59\\practice\\큰 수의 법칙.py","group":"local","local":true}
