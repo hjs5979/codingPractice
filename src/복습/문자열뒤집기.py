@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 numbers = list(map(int, list(input())))
 
 cnt = [0,0]
@@ -10,3 +11,6 @@ for n in range(len(numbers)):
     temp = numbers[n]
 
 print(min(cnt))
+=======
+s_number = 
+>>>>>>> b8191526029f6b1e6758e732c58bf89231d47a23

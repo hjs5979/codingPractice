@@ -1,0 +1,1 @@
+{"name":"Local: 곱하기혹은더하기","url":"c:\\Users\\hjs59\\practice\\곱하기혹은더하기.py","tests":[{"id":1673955307990,"input":"02984","output":"576"},{"id":1673955316437,"input":"567","output":"210"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\hjs59\\practice\\곱하기혹은더하기.py","group":"local","local":true}
