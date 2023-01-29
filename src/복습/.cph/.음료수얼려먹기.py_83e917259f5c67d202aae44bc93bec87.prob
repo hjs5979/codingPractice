@@ -1,0 +1,1 @@
+{"name":"Local: 음료수얼려먹기","url":"c:\\Users\\hjs59\\git\\codingPractice\\src\\복습\\음료수얼려먹기.py","tests":[{"id":1674474159608,"input":"4 5\n00110\n00011\n11111\n00000","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\hjs59\\git\\codingPractice\\src\\복습\\음료수얼려먹기.py","group":"local","local":true}
