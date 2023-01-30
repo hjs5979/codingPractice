@@ -1,0 +1,1 @@
+{"name":"Local: 금광","url":"c:\\Users\\hjs59\\git\\codingPractice\\src\\복습\\금광.py","tests":[{"id":1675079475955,"input":"2\n3 4\n1 3 3 2 2 1 4 1 0 6 4 7\n4 4\n1 3 1 5 2 2 4 1 5 0 2 3 0 6 1 2","output":"19\n16"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\hjs59\\git\\codingPractice\\src\\복습\\금광.py","group":"local","local":true}
