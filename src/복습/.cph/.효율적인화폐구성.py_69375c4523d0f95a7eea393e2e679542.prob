@@ -1,0 +1,1 @@
+{"name":"Local: 효율적인화폐구성","url":"c:\\Users\\hjs59\\git\\codingPractice\\src\\복습\\효율적인화폐구성.py","tests":[{"id":1675337970773,"input":"2 15\n2\n3","output":"5"},{"id":1675339279693,"input":"3 4\n3\n5\n7","output":"-1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\hjs59\\git\\codingPractice\\src\\복습\\효율적인화폐구성.py","group":"local","local":true}
