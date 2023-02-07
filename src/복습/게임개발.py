@@ -1,45 +1,55 @@
-n, m = map(int,input().split())
-x, y, d = map(int,input().split())
+n, m = map(int, input().split())
+x, y, d = map(int, input().split())
 
 graph = []
-
 for _ in range(n):
     graph.append(list(map(int,input().split())))
 
-loc = [[0] * m for _ in range(n)]
+# n, m = 4, 5
+# x, y, d = 1, 1, 0
 
-loc[x][y] == 1
+# graph = [[1, 1, 1, 1, 1],
+#          [1, 0, 1, 1, 1],
+#          [1, 0, 0, 0, 1], 
+#          [1, 1, 1, 1, 1]]
 
-dx = [-1,0,1,0]
-dy = [0,-1,0,1]
 
-def direction_move():
-    global d
+dx = [0, 1, 0, -1]
+dy = [1, 0, -1, 0]
+
+def turn(d):
     d -= 1
-    if d == -1:
-        d == 3
+    if d < 0:
+        d=3
+    return d
 
-answer = 0
+graph[x][y] = -1
+
+move_cnt = 1
+turn_cnt = 0
 
 while True:
-    turn_cnt = 0
-    for _ in range(4):
-        direction_move()
-        
-        nx , ny = x+dx[d], y+dy[d]
-        if  0 <= nx < m and 0<= ny < n and loc[nx][ny] != 1 and graph[nx][ny] != 1:
-            x, y = nx, ny
-            answer += 1
-            
-        # turn_cnt += 1
-    nx, ny = -x, -y
-    if 0 <= nx < m and 0<= ny < n and graph[nx][ny] != 1:
-        x, y = -x, -y
-    else:
-        break
-print(answer)
+    d = turn(d)
+    turn_cnt += 1
+    nx = x + dx[d]
+    ny = y + dy[d]
     
+    if graph[nx][ny] == 0:
+        graph[nx][ny] = -1
+        x, y = nx, ny
+        move_cnt += 1
+        turn_cnt = 0
+        continue
+    
+    if turn_cnt == 4:
+        
+        nx = x - dx[d]
+        ny = y - dy[d]
+        if graph[nx][ny] == -1:
+            x, y = nx, ny
+            turn_cnt = 0
             
+        else:
+            break   
 
-        
-        
+print(move_cnt)
