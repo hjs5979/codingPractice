@@ -1,43 +1,36 @@
 from itertools import combinations
 
-n, m = map(int,input().split())
+array = []
 
-graph = []
+n,m = map(int,input().split())
 
 for _ in range(n):
-    graph.append(list(map(int,input().split())))
+    array.append(list(map(int,input().split())))
 
-chicken_list = []
-house_list = []
+chicken = []
 
-for r in range(n):
-    for c in range(n):
-        if graph[r][c] == 2:
-            chicken_list.append((r,c))
+for i in range(n):
+    for j in range(n):
+        if array[i][j] == 2:
+            chicken.append((i,j))
 
-        elif graph[r][c] == 1:
-            house_list.append((r,c))
-            
-        
-events = list(combinations(chicken_list,m))
+events = list(combinations(chicken,m))
 
-def distance(event):
-    chicken_distance = 0
-    
-    for hx,hy in house_list:
-        min_value = 1e9
-        for cx,cy in event:
-            min_value= min(min_value, abs(hx-cx) + abs(hy-cy))
-        chicken_distance += min_value
-    return chicken_distance
+houses = []
 
-result = 1e9
-
+for i in range(n):
+    for j in range(n):
+        if array[i][j] == 1:
+            houses.append((i,j))
+answer = 1e9
 for event in events:
-    result = min(result, distance(event))
-
-print(result)
-
-
-
+    distance = 0
+    for house in houses:
+        min_value = 1e9
+        for e in event:
+            d = abs(house[0]-e[0]) + abs(house[1]-e[1])
+            min_value = min(min_value, d)
+        distance += min_value
     
+    answer = min(answer, distance)
+print(answer)
