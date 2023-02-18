@@ -1,59 +1,69 @@
+from collections import deque
 from itertools import combinations
+import copy
 
-n,m = map(int,input().split())
+n, m = map(int,input().split())
 
-graph=[]
+data = []
 
 for _ in range(n):
-    graph.append(list(map(int,input().split())))
-
+    data.append(list(map(int, input().split())))
+    
 zeros = []
 
-for r in range(n):
-    for c in range(m):
-        if graph[r][c] == 0:
-            zeros.append((r,c))
+for i in range(n):
+    for j in range(m):
+        if data[i][j] == 0:
+            zeros.append((i,j))
 
-walls = list(combinations(zeros,3))
+combs = list(combinations(zeros,3))
 
-def contagious(x,y):
-        
-    dx = [-1,1,0,0]
-    dy = [0,0,-1,1]
-    
-    for i in range(4):
-        nx = x + dx[i]
-        ny = y + dy[i]
-        
-        if 0< nx < n and 0 < ny < m:
-            if graph2[nx][ny] == 0:
-                graph2[nx][ny] = 2
-                contagious(nx,ny)
+dx = [-1,0,1,0]
+dy = [0,-1,0,1]
 
-def count(g):
-    cnt = 0
-    for r in range(n):
-        for c in range(m):
-            if graph[r][c] == 0:
-                cnt +=1
-    return cnt 
+def score(new_data):
+    count = 0
+    for i in range(n):
+        for j in range(m):
+            if new_data[i][j] == 0:
+                count += 1
+    return count
+                
 
+# new_data = copy.deepcopy(data)
 answer = 0
-for wall in walls:
-    for a in wall:
-        graph2 = graph.copy()
-        graph2[a[0]][a[1]] = 1
 
-    for r,c in zeros:
-        if graph2[r][c] == 2:
-            contagious(r,c)
+for comb in combs:
+    new_data = copy.deepcopy(data)
     
-    safe = count(graph2)
+    for c in comb:
+        new_data[c[0]][c[1]] = 1
+
+    q= deque()
+        
+    for x in range(n):
+        for y in range(m):
+            if new_data[x][y] == 2:
+                q.append((x,y))
     
-    answer = max(answer,safe)
+    while q:
+        tempx,tempy = q.popleft()
+        
+        for i in range(4):
+            nx = tempx + dx[i]
+            ny = tempy + dy[i]
+            
+            if nx < 0 or nx >= n or ny < 0 or ny >= m:
+                continue
+            
+            if new_data[nx][ny] == 0:
+                new_data[nx][ny] = 2
+                q.append((nx,ny))
+
+    answer = max(answer, score(new_data))
 
 print(answer)
-            
+    
+                
 
-            
         

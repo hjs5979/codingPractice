@@ -1,36 +1,44 @@
 from collections import deque
 
-n, m, k, x = map(int,input().split())
+n,m,k,x = map(int,input().split())
 
-roads = [[] for _ in range(n+1)]
+graph = [[] for _ in range(n+1)]
 
 for _ in range(m):
-    a, b = map(int,input().split())
-    roads[a].append(b)
+    a,b = map(int,input().split())
+    graph[a].append(b)
+
+q = []
+
+q = deque()
+
+q.append(x)
 
 distance = [-1] * (n+1)
 
 distance[x] = 0
-queue = deque([x])
 
-answer = []
-
-while queue:
-    temp = queue.popleft()
+while q:
+    now = q.popleft()
     
-    for i in roads[temp]:
+    for i in graph[now]:
         if distance[i] == -1:
-            distance[i] = distance[temp] + 1
-            queue.append(i)
+            distance[i] = distance[now] + 1
+            q.append(i)
 
 check = False
-
-for i in range(n+1):
+for i in range(1,n+1):
     if distance[i] == k:
         print(i)
         check = True
 
-if check == False:
+if check==False:
     print(-1)
-
     
+
+            
+        
+
+
+
+
