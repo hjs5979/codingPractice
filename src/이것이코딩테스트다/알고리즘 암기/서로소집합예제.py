@@ -42,12 +42,15 @@
 #     print(parent[i], end=' ')
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #---------------------------------------
 
 def find_parent(parent, a):
     if parent[a] != a:
         parent[a] = find_parent(parent,parent[a])
 =======
+=======
+>>>>>>> 35d42c153572b0cbd616d7fa16e0d456165c8179
 #서로소 집합을 활용한 사이클 판별 소스코드
 
 # def find_parent(parent, x):
@@ -88,12 +91,16 @@ def find_parent(parent, a):
 def find_parent(parent, a):
     if parent[a] != a:
         parent[a] = find_parent(parent, parent[a])
+<<<<<<< HEAD
+>>>>>>> 35d42c153572b0cbd616d7fa16e0d456165c8179
+=======
 >>>>>>> 35d42c153572b0cbd616d7fa16e0d456165c8179
     return parent[a]
 
 def union_parent(parent, a, b):
     a = find_parent(parent, a)
     b = find_parent(parent, b)
+<<<<<<< HEAD
 <<<<<<< HEAD
 
     if a > b:
@@ -116,6 +123,8 @@ for i in range(1,v+1):
     print(find_parent(parent,i))
 
 =======
+=======
+>>>>>>> 35d42c153572b0cbd616d7fa16e0d456165c8179
     
     if b > a:
         parent[b] = a
@@ -136,5 +145,9 @@ print(parent)
 print(cycle)
 
 
+<<<<<<< HEAD
+    
+>>>>>>> 35d42c153572b0cbd616d7fa16e0d456165c8179
+=======
     
 >>>>>>> 35d42c153572b0cbd616d7fa16e0d456165c8179

@@ -37,6 +37,7 @@
 # topology_sort()
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # -------------------------------------------
 
 from collections import deque
@@ -60,10 +61,23 @@ for i in range(e):
 =======
 for _ in range(m):
 >>>>>>> 35d42c153572b0cbd616d7fa16e0d456165c8179
+=======
+# ---------------------------------------------
+from collections import deque
+
+n,m = map(int, input().split())
+
+graph = [[] for _ in range(n+1)]
+
+indegree = [0] * (n+1)
+
+for _ in range(m):
+>>>>>>> 35d42c153572b0cbd616d7fa16e0d456165c8179
     a,b = map(int,input().split())
     graph[a].append(b)
     indegree[b] += 1
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 result= []
 
@@ -85,6 +99,24 @@ while q:
             q.append(i)
 
 print(result)
+=======
+q = deque()
+
+for i in range(n+1):
+    if indegree[i] == 0: 
+        q.append(i)
+        
+while q:
+    now = q.popleft()
+
+    print(now)
+    
+    for i in graph[now]:
+        indegree[i] -= 1
+        if indegree[i] == 0:
+            q.append(i)
+
+>>>>>>> 35d42c153572b0cbd616d7fa16e0d456165c8179
 =======
 q = deque()
 

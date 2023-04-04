@@ -7,10 +7,13 @@
 # data = [1,2,3,2,5] # 전체 수열
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # n = int(input())
 # m = int(input())
 # data = list(map(int,input().split()))
 
+=======
+>>>>>>> 35d42c153572b0cbd616d7fa16e0d456165c8179
 =======
 >>>>>>> 35d42c153572b0cbd616d7fa16e0d456165c8179
 # count = 0
@@ -30,11 +33,14 @@
 # print(count)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # -------------------------------------------------
 
 n = int(input())
 m = int(input())
 =======
+=======
+>>>>>>> 35d42c153572b0cbd616d7fa16e0d456165c8179
 # # 2. 정렬되어 있는 두 리스트의 합집합
 
 # # 사전에 정렬된 리스트 A와 B 선언
@@ -71,6 +77,9 @@ m = int(input())
 n = int(input())
 m = int(input())
 
+<<<<<<< HEAD
+>>>>>>> 35d42c153572b0cbd616d7fa16e0d456165c8179
+=======
 >>>>>>> 35d42c153572b0cbd616d7fa16e0d456165c8179
 data = list(map(int,input().split()))
 
@@ -83,11 +92,18 @@ for start in range(n):
         interval_sum += data[end]
         end += 1
 <<<<<<< HEAD
+<<<<<<< HEAD
     if interval_sum == m:
         count += 1
     interval_sum -= data[start]
 
 print(start)
+=======
+    
+    if interval_sum == m:
+        count += 1
+    interval_sum -= data[start]
+>>>>>>> 35d42c153572b0cbd616d7fa16e0d456165c8179
 =======
     
     if interval_sum == m:

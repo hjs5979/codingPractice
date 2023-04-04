@@ -73,10 +73,14 @@ for a,b,c in edges:
 
 print(result)
 
+# ------------------------------------------------------------
 
+<<<<<<< HEAD
 
 # ------------------------------------------------------------
 
+=======
+>>>>>>> 35d42c153572b0cbd616d7fa16e0d456165c8179
 def find_parent(parent, a):
     if parent[a] != a:
         parent[a] = find_parent(parent, parent[a])
