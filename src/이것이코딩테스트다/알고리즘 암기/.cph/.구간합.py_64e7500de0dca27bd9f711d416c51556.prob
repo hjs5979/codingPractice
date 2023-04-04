@@ -1,0 +1,1 @@
+{"name":"Local: 구간합","url":"c:\\Users\\hjs59\\git\\codingPractice\\src\\이것이코딩테스트다\\알고리즘 암기\\구간합.py","tests":[{"id":1675951004746,"input":"5\n10 20 30 40 50","output":"70"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\hjs59\\git\\codingPractice\\src\\이것이코딩테스트다\\알고리즘 암기\\구간합.py","group":"local","local":true}
