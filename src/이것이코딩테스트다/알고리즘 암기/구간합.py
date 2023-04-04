@@ -1,29 +1,16 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 # # 데이터 개수  N과 전체 데이터 선언
-# n = int(input())
-# num_list = list(map(int,input().split()))
-=======
+
 # n = int(input())
 # data = list(map(int,input().split()))
->>>>>>> 35d42c153572b0cbd616d7fa16e0d456165c8179
-=======
-# n = int(input())
-# data = list(map(int,input().split()))
->>>>>>> 35d42c153572b0cbd616d7fa16e0d456165c8179
+
 
 # # 접두사 합(Prefix Sum) 배열 계산
 # sum_value = 0
 # prefix_sum = [0]
-<<<<<<< HEAD
-<<<<<<< HEAD
-# for i in num_list:
-=======
+
 # for i in data:
->>>>>>> 35d42c153572b0cbd616d7fa16e0d456165c8179
-=======
-# for i in data:
->>>>>>> 35d42c153572b0cbd616d7fa16e0d456165c8179
+
 #     sum_value += i
 #     prefix_sum.append(sum_value)
 
@@ -32,18 +19,6 @@
 # right = 4
 # print(prefix_sum[right] - prefix_sum[left-1])
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-#---------------------------------------
-n = int(input())
-num_list = list(map(int,input().split()))
-
-sum_value = 0
-prefix_sum = [0]
-for i in num_list:
-=======
-
-
 #-----------------------------------
 
 n = int(input())
@@ -51,20 +26,8 @@ data = list(map(int,input().split()))
 
 sum_value = 0
 prefix_sum = [0]
-=======
-
-
-#-----------------------------------
-
-n = int(input())
-data = list(map(int,input().split()))
-
-sum_value = 0
-prefix_sum = [0]
->>>>>>> 35d42c153572b0cbd616d7fa16e0d456165c8179
 
 for i in data:
->>>>>>> 35d42c153572b0cbd616d7fa16e0d456165c8179
     sum_value += i
     prefix_sum.append(sum_value)
 
