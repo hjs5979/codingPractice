@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 # import heapq
+=======
+# # 개선된 다익스트라 알고리즘
+
+# import heapq
+# import sys
+>>>>>>> 35d42c153572b0cbd616d7fa16e0d456165c8179
 
 # INF = int(1e9) #무한을 의미하는 값으로 10억을 설정
 
@@ -37,6 +44,7 @@
 # print(distance)
 
 
+<<<<<<< HEAD
 #---------------------------------------
 
 import heapq
@@ -50,11 +58,26 @@ graph = [[] for i in range(n+1)]
 distance = [1e9] * (n+1)
 
 for i in range(m):
+=======
+# -------------------------------------------------------
+import heapq
+
+n,m = map(int,input().split())
+
+start = int(input())
+
+graph = [[] for _ in range(n+1)]
+
+distance = [1e9] * (n+1)
+
+for _ in range(m):
+>>>>>>> 35d42c153572b0cbd616d7fa16e0d456165c8179
     a,b,c = map(int,input().split())
     graph[a].append((b,c))
 
 q = []
 
+<<<<<<< HEAD
 heapq.heappush(q,(start, 0))
 
 distance[start] = 0
@@ -73,3 +96,20 @@ print(distance)
 
 
 
+=======
+heapq.heappush(q,(start,0))
+
+while q:
+    now, dist = heapq.heappop(q)
+    
+    if dist > distance[now]:
+        continue
+    
+    for i in graph[now]:
+        cost = i[1] + dist
+        if cost < distance[i[0]]:
+            distance[i[0]] = cost
+            heapq.heappush(q,(i[0],cost))
+    
+print(distance)
+>>>>>>> 35d42c153572b0cbd616d7fa16e0d456165c8179

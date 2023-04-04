@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"name":"Local: 서로소집합예제","url":"c:\\Users\\hjs59\\git\\codingPractice\\src\\이것이코딩테스트다\\알고리즘 암기\\서로소집합예제.py","tests":[{"id":1665850073180,"input":"6 4\n1 4\n2 3\n2 4\n5 6","output":"1\n1\n1\n1\n5\n5"},{"id":1665850579972,"input":"3 3\n1 2\n1 3\n2 3","output":"1\n1\n1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\hjs59\\git\\codingPractice\\src\\이것이코딩테스트다\\알고리즘 암기\\서로소집합예제.py","group":"local","local":true}
+=======
+{"name":"Local: 서로소집합예제","url":"c:\\Users\\hjs59\\git\\codingPractice\\src\\이것이코딩테스트다\\알고리즘 암기\\서로소집합예제.py","tests":[{"id":1665850073180,"input":"6 4\n1 4\n2 3\n2 4\n5 6","output":""},{"id":1665850579972,"input":"3 3\n1 2\n1 3\n2 3","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\hjs59\\git\\codingPractice\\src\\이것이코딩테스트다\\알고리즘 암기\\서로소집합예제.py","group":"local","local":true}
+>>>>>>> 35d42c153572b0cbd616d7fa16e0d456165c8179

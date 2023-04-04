@@ -1,13 +1,13 @@
 n = int(input())
-mans = list(map(int,input().split()))
 
-mans.sort()
-cnt = 0
-g = 0
-for i in range(n):
-    g += 1
-    if g >= mans[i]:
-        g = 0
-        cnt += 1
+array = list(map(int,input().split()))
 
-print(cnt)
+array.sort()
+
+result = 0
+count = 0
+for i in array:
+    count += 1
+    if i <= count:
+        result += 1
+        count = 0
