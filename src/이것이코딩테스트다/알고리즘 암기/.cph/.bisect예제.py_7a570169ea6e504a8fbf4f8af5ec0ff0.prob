@@ -1,9 +1,1 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-{"name":"Local: bisect예제","url":"c:\\Users\\hjs59\\git\\codingPractice\\src\\이것이코딩테스트다\\알고리즘 암기\\bisect예제.py","tests":[{"id":1680421293456,"input":"1 2 4 4 8\n4","output":"2\n4\n2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\hjs59\\git\\codingPractice\\src\\이것이코딩테스트다\\알고리즘 암기\\bisect예제.py","group":"local","local":true}
-=======
-{"name":"Local: bisect예제","url":"c:\\Users\\hjs59\\git\\codingPractice\\src\\이것이코딩테스트다\\알고리즘 암기\\bisect예제.py","tests":[{"id":1676615203300,"input":"1 2 3 3 3 3 4 4 8 9","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\hjs59\\git\\codingPractice\\src\\이것이코딩테스트다\\알고리즘 암기\\bisect예제.py","group":"local","local":true}
->>>>>>> 35d42c153572b0cbd616d7fa16e0d456165c8179
-=======
-{"name":"Local: bisect예제","url":"c:\\Users\\hjs59\\git\\codingPractice\\src\\이것이코딩테스트다\\알고리즘 암기\\bisect예제.py","tests":[{"id":1676615203300,"input":"1 2 3 3 3 3 4 4 8 9","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\hjs59\\git\\codingPractice\\src\\이것이코딩테스트다\\알고리즘 암기\\bisect예제.py","group":"local","local":true}
->>>>>>> 35d42c153572b0cbd616d7fa16e0d456165c8179
+{"name":"Local: bisect예제","url":"c:\\Users\\hjs59\\git\\codingPractice\\src\\이것이코딩테스트다\\알고리즘 암기\\bisect예제.py","tests":[{"id":1680682796275,"input":"1 2 4 4 5 5 6 7 8\n4","output":"2\n4\n2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\hjs59\\git\\codingPractice\\src\\이것이코딩테스트다\\알고리즘 암기\\bisect예제.py","group":"local","local":true}
