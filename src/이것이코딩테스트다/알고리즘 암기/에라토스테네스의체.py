@@ -26,19 +26,21 @@ import numpy as np
 
 n = int(input())
 
-answer = []
-array = [True for i in range(n+1)]
+is_prime = [True for i in range(n+1)]
+prime_list = []
 
-for i in range(2, int(np.sqrt(n)+1)):
-    if array[i]:
+for i in range(2,int(np.sqrt(n))+1):
+    if is_prime[i]:
         j=2
         while i*j <= n:
-            array[i*j] = False
+            is_prime[i*j] = False
             j+=1
 
 for i in range(2, n+1):
-    if array[i]:
-        answer.append(i)
+    if is_prime[i]:
+        prime_list.append(i)
 
-print(len(answer))
+print(prime_list)
+
+
 

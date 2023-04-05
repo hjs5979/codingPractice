@@ -22,16 +22,15 @@
 #-----------------------------------
 
 n = int(input())
-data = list(map(int,input().split()))
+num_list = list(map(int,input().split()))
 
 sum_value = 0
 prefix_sum = [0]
 
-for i in data:
+for i in num_list:
     sum_value += i
     prefix_sum.append(sum_value)
 
-left = 3
+left =3
 right = 4
-
 print(prefix_sum[right] - prefix_sum[left-1])

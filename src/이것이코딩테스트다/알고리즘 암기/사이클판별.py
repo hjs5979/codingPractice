@@ -37,34 +37,35 @@
 
 def find_parent(parent, a):
     if parent[a] != a:
-        parent[a] = find_parent(parent, parent[a])
+        parent[a] = find_parent(parent,parent[a])
     return parent[a]
 
 def union_parent(parent, a, b):
-    a = find_parent(parent,a)
-    b = find_parent(parent,b)
+    a = find_parent(parent, a)
+    b = find_parent(parent, b)
 
-    if a < b:
+    if a > b:
         parent[b] = a
-    else :
+    else:
         parent[a] = b
 
-v, e = map(int,input().split())
-parent = [0] * (v+1)
+v, e = map(int, input().split())
 
-cycle = False
-for i in range(1,v+1):
+parent= [0] * (v+1)
+
+for i in range(v+1):
     parent[i] = i
 
-for i in range(e):
-    a,b = map(int, input().split())
+cycle = False
 
-    if find_parent(parent, a) == find_parent(parent,b):
+for _ in range(e):
+    a,b = map(int,input().split())
+    
+    if find_parent(parent, a) == find_parent(parent, b):
         cycle = True
         break
     else:
         union_parent(parent, a, b)
 
 print(cycle)
-
 

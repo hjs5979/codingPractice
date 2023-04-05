@@ -25,51 +25,25 @@
 
 # -----------------------------------------------------------------------
 
-n = int(input())
 
+n = int(input())
 m = int(input())
 
 graph = [[1e9] * (n+1) for _ in range(n+1)]
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-for i in range(n+1):
-    graph[i][i] = 0
-
-for i in range(m):
-    a,b,c = map(int,input().split())
+for _ in range(m):
+    a,b,c = map(int, input().split())
     graph[a][b] = c
+
+for i in range(1,n+1):
+    graph[i][i] = 0
 
 for k in range(1, n+1):
-    for i in range(1, n+1):
-        for j in range(1, n+1):
-            graph[i][j] = min(graph[i][j], graph[i][k]+graph[k][j])
+    for a in range(1, n+1):
+        for b in range(1, n+1):
+            graph[a][b] = min(graph[a][b], graph[a][k] + graph[k][b])
 
 print(graph)
-=======
-for _ in range(m):
-    a,b,c = map(int, input().split())
-    graph[a][b] = c
 
-for i in range(1,n+1):
-    graph[i][i] = 0
 
-=======
-for _ in range(m):
-    a,b,c = map(int, input().split())
-    graph[a][b] = c
 
-for i in range(1,n+1):
-    graph[i][i] = 0
-
->>>>>>> 35d42c153572b0cbd616d7fa16e0d456165c8179
-for k in range(n+1):
-    for r in range(n+1):
-        for c in range(n+1):
-            graph[r][c] = min(graph[r][c], graph[r][k] + graph[k][c])
-<<<<<<< HEAD
-        
->>>>>>> 35d42c153572b0cbd616d7fa16e0d456165c8179
-=======
-        
->>>>>>> 35d42c153572b0cbd616d7fa16e0d456165c8179

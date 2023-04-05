@@ -1,10 +1,7 @@
-# import heapq
-
 # # 개선된 다익스트라 알고리즘
 
 # import heapq
 # import sys
-
 
 # INF = int(1e9) #무한을 의미하는 값으로 10억을 설정
 
@@ -43,88 +40,34 @@
 # print(distance)
 
 #---------------------------------------
-
 import heapq
 
-n, m = map(int, input().split())
-
-start = int(input())
-
-graph = [[] for i in range(n+1)]
-=======
-# -------------------------------------------------------
-import heapq
-
-n,m = map(int,input().split())
-
+n,m  = map(int, input().split())
 start = int(input())
 
 graph = [[] for _ in range(n+1)]
-
-distance = [1e9] * (n+1)
->>>>>>> 35d42c153572b0cbd616d7fa16e0d456165c8179
-
-distance = [1e9] * (n+1)
-
-for i in range(m):
-=======
-# -------------------------------------------------------
-import heapq
-
-n,m = map(int,input().split())
-
-start = int(input())
-
-graph = [[] for _ in range(n+1)]
-
-distance = [1e9] * (n+1)
 
 for _ in range(m):
     a,b,c = map(int,input().split())
     graph[a].append((b,c))
 
 q = []
+heapq.heappush(q,(start,0))
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-heapq.heappush(q,(start, 0))
+distance = [1e9] * (n+1)
 
 distance[start] = 0
 
 while q:
     now, dist = heapq.heappop(q)
+
     if dist > distance[now]:
         continue
-    for i in graph[now]:
-        cost = i[1] + dist
-        if distance[i[0]] > cost:
-            distance[i[0]] = cost
-            heapq.heappush(q,(i[0],cost))
+
+    for r in graph[now]:
+        cost = r[1] + dist
+        if cost < distance[r[0]]:
+            distance[r[0]] = cost
+            heapq.heappush(q,(r[0],cost))
 
 print(distance)
-
-
-
-=======
-=======
->>>>>>> 35d42c153572b0cbd616d7fa16e0d456165c8179
-heapq.heappush(q,(start,0))
-
-while q:
-    now, dist = heapq.heappop(q)
-    
-    if dist > distance[now]:
-        continue
-    
-    for i in graph[now]:
-        cost = i[1] + dist
-        if cost < distance[i[0]]:
-            distance[i[0]] = cost
-            heapq.heappush(q,(i[0],cost))
-    
-<<<<<<< HEAD
-print(distance)
->>>>>>> 35d42c153572b0cbd616d7fa16e0d456165c8179
-=======
-print(distance)
->>>>>>> 35d42c153572b0cbd616d7fa16e0d456165c8179
