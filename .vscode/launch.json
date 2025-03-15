@@ -1,16 +1,219 @@
 {
-    // IntelliSense를 사용하여 가능한 특성에 대해 알아보세요.
-    // 기존 특성에 대한 설명을 보려면 가리킵니다.
-    // 자세한 내용을 보려면 https://go.microsoft.com/fwlink/?linkid=830387을(를) 방문하세요.
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "name": "Python: 현재 파일",
-            "type": "python",
-            "request": "launch",
-            "program": "${file}",
-            "console": "integratedTerminal",
-            "justMyCode": true
-        }
-    ]
+  // IntelliSense를 사용하여 가능한 특성에 대해 알아보세요.
+  // 기존 특성에 대한 설명을 보려면 가리킵니다.
+  // 자세한 내용을 보려면 https://go.microsoft.com/fwlink/?linkid=830387을(를) 방문하세요.
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "hashMapTemplate",
+      "request": "launch",
+      "mainClass": "hashMapTemplate",
+      "projectName": "codingPractice_518fbf0a"
+    },
+    {
+      "type": "java",
+      "name": "bfsPracticeTemplate",
+      "request": "launch",
+      "mainClass": "bfsPracticeTemplate",
+      "projectName": "codingPractice_518fbf0a"
+    },
+    {
+      "type": "java",
+      "name": "dfsPracticeTemplate",
+      "request": "launch",
+      "mainClass": "dfsPracticeTemplate",
+      "projectName": "codingPractice_518fbf0a"
+    },
+    {
+      "type": "java",
+      "name": "typePractice",
+      "request": "launch",
+      "mainClass": "typePractice",
+      "projectName": "codingPractice_518fbf0a"
+    },
+    {
+      "type": "java",
+      "name": "practice",
+      "request": "launch",
+      "mainClass": "practice",
+      "projectName": "codingPractice_518fbf0a"
+    },
+    {
+      "type": "java",
+      "name": "stringbuilder",
+      "request": "launch",
+      "mainClass": "stringbuilder",
+      "projectName": "codingPractice_518fbf0a"
+    },
+    {
+      "type": "java",
+      "name": "typecopy",
+      "request": "launch",
+      "mainClass": "typecopy",
+      "projectName": "codingPractice_518fbf0a"
+    },
+    {
+      "type": "java",
+      "name": "binarysearch",
+      "request": "launch",
+      "mainClass": "binarysearch",
+      "projectName": "codingPractice_518fbf0a"
+    },
+    {
+      "type": "java",
+      "name": "topologicalSort",
+      "request": "launch",
+      "mainClass": "topologicalSort",
+      "projectName": "codingPractice_518fbf0a"
+    },
+    {
+      "type": "java",
+      "name": "graph",
+      "request": "launch",
+      "mainClass": "graph",
+      "projectName": "codingPractice_518fbf0a"
+    },
+    {
+      "type": "java",
+      "name": "permutation_string",
+      "request": "launch",
+      "mainClass": "permutation_string",
+      "projectName": "codingPractice_518fbf0a"
+    },
+    {
+      "type": "java",
+      "name": "BFS",
+      "request": "launch",
+      "mainClass": "BFS",
+      "projectName": "codingPractice_518fbf0a"
+    },
+    {
+      "type": "java",
+      "name": "hashMap",
+      "request": "launch",
+      "mainClass": "hashMap",
+      "projectName": "codingPractice_518fbf0a"
+    },
+    {
+      "type": "java",
+      "name": "combination",
+      "request": "launch",
+      "mainClass": "combination",
+      "projectName": "codingPractice_518fbf0a"
+    },
+    {
+      "type": "java",
+      "name": "permutation",
+      "request": "launch",
+      "mainClass": "permutation",
+      "projectName": "codingPractice_518fbf0a"
+    },
+    {
+      "type": "java",
+      "name": "stringbuffer",
+      "request": "launch",
+      "mainClass": "stringbuffer",
+      "projectName": "codingPractice_518fbf0a"
+    },
+    {
+      "type": "java",
+      "name": "type",
+      "request": "launch",
+      "mainClass": "type",
+      "projectName": "codingPractice_518fbf0a"
+    },
+    {
+      "type": "java",
+      "name": "구간합",
+      "request": "launch",
+      "mainClass": "구간합",
+      "projectName": "codingPractice_518fbf0a"
+    },
+    {
+      "type": "java",
+      "name": "개똥벌레",
+      "request": "launch",
+      "mainClass": "개똥벌레",
+      "projectName": "codingPractice_518fbf0a"
+    },
+    {
+      "type": "java",
+      "name": "test",
+      "request": "launch",
+      "mainClass": "test",
+      "projectName": "codingPractice_518fbf0a"
+    },
+    {
+      "type": "java",
+      "name": "streamAndHashMap",
+      "request": "launch",
+      "mainClass": "streamAndHashMap",
+      "projectName": "codingPractice_518fbf0a"
+    },
+    {
+      "type": "java",
+      "name": "녹색_옷_입은_애가_젤다지",
+      "request": "launch",
+      "mainClass": "녹색_옷_입은_애가_젤다지",
+      "projectName": "codingPractice_518fbf0a"
+    },
+    {
+      "type": "java",
+      "name": "djkstra",
+      "request": "launch",
+      "mainClass": "djkstra",
+      "projectName": "codingPractice_518fbf0a"
+    },
+    {
+      "type": "java",
+      "name": "union",
+      "request": "launch",
+      "mainClass": "union",
+      "projectName": "codingPractice_518fbf0a"
+    },
+    {
+      "type": "java",
+      "name": "dataStructure",
+      "request": "launch",
+      "mainClass": "dataStructure",
+      "projectName": "codingPractice_518fbf0a"
+    },
+    {
+      "type": "java",
+      "name": "t",
+      "request": "launch",
+      "mainClass": "t",
+      "projectName": "codingPractice_518fbf0a"
+    },
+    {
+      "type": "java",
+      "name": "stream",
+      "request": "launch",
+      "mainClass": "stream",
+      "projectName": "codingPractice_518fbf0a"
+    },
+    {
+      "type": "java",
+      "name": "combinations",
+      "request": "launch",
+      "mainClass": "combinations",
+      "projectName": "codingPractice_518fbf0a"
+    },
+    {
+      "type": "java",
+      "name": "combinations",
+      "request": "launch",
+      "mainClass": "자바정리.combinations",
+      "projectName": "codingPractice_518fbf0a"
+    },
+    {
+      "name": "Python: 현재 파일",
+      "type": "python",
+      "request": "launch",
+      "program": "${file}",
+      "console": "integratedTerminal",
+      "justMyCode": true
+    }
+  ]
 }
