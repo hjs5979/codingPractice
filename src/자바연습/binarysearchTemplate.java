@@ -1,29 +1,22 @@
 public class binarysearchTemplate {
-    // 이진탐색 로직
-	static int[] arr = {1, 3, 5, 7, 8, 10, 20, 35, 99, 100};
 
 	public static void main(String[] args) {
-		System.out.println(binarySearch(arr, 10, 0, 10)); // 2
 		
+		int[] arr = {1, 3, 5, 7, 8, 10, 20, 35, 99, 100};
+		int target = 5;
+
 	}
 
-    static int binarySearch(int[] array, int target, int start, int end) {
-		
-        // end가 start보다 큰 동안 반복
-        while(start < end) {
+// ==================================================================================================================================================================================================
 
-			int mid = (start + end)/2;
-			
-			if(target > array[mid]) {
-				start = mid+1;
-			}
-			else if(target < array[mid]){
-				end = mid-1;
-			}
-			else{
-				return mid;
-			}
-		}
-        return -1;
-	}
+	// 이진탐색
+
+	// 데이터는 정렬되어 있어야함
+
+	// 1. 시작인덱스 < 종료인덱스 인 동안 while
+	// 2. 중간 인덱스 계산
+	// 3. 찾는 값이 배열의 중간위치의 값보다 크면 시작인덱스 = 중간인덱스 + 1
+	// 4. 찾는 값이 배열의 중간위치의 값보다 작으면 종료인덱스 = 중간인덱스 - 1
+    // 5. 찾는 값 = 배열의 중간위치의 값 그대로 리턴
+	// 6. 없으면 -1
 }
